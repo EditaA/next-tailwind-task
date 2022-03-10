@@ -19,4 +19,4 @@ const ArrowIcon = ({ classes, ...rest }) => {
   );
 };
 
-module.exports = ArrowIcon;
+export default ArrowIcon;
