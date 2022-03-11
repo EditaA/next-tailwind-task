@@ -12,7 +12,7 @@ const Template = ({ goBackHref, children }) => {
             className="flex flex-col items-center mr-8 text-gray-500"
             href={goBackHref}
           >
-            <ArrowIcon /> <span>Zuruck</span>
+            <ArrowIcon /> <span>Zurück</span>
           </a>
         </Link>
 
