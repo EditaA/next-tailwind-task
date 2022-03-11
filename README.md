@@ -10,6 +10,6 @@ npm run dev
 yarn dev
 ```
 ## Demo 
-you can check live demo at [link](https://next-tailwind-task.vercel.app/services)
+you can check live demo at [link](https://next-tailwind-task.vercel.app)
 
 

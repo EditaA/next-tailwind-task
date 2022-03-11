@@ -7,11 +7,11 @@ const ServiceList = ({ services }) => {
       {services.map((service) => (
         <li
           key={service.id}
-          className="mt-3 text-gray-500 bg-white rounded-lg shadow-md hover:shadow-lg"
+          className="mt-3 text-gray-500 bg-white rounded-lg shadow-md dark:bg-slate-300 dark:text-gray-800 hover:shadow-lg"
         >
           <Link href={service.href}>
             <a
-              className="flex justify-between px-6 py-2 hover:text-gray-700"
+              className="flex justify-between px-6 py-2 hover:text-gray-700 dark:hover:text-gray-900"
               href={service.href}
             >
               {service.text}

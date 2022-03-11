@@ -9,7 +9,7 @@ export const RadoiInput = ({ name, id, children }) => {
       />
       <label
         htmlFor={id}
-        className="flex px-6 py-3 text-gray-500 bg-white shadow-md cursor-pointer rounded-xl focus:outline-none hover:bg-gray-50 peer-checked:ring-primary peer-checked:ring-2 peer-checked:font-semibold"
+        className="flex px-6 py-3 text-gray-500 bg-white shadow-md cursor-pointer dark:text-gray-800 dark:bg-slate-300 rounded-xl focus:outline-none hover:bg-gray-50 peer-checked:ring-primary peer-checked:ring-2 peer-checked:font-semibold"
       >
         <span className="ml-8">{children}</span>
       </label>

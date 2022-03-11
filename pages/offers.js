@@ -14,9 +14,11 @@ const services = [
 export default function Offers() {
   return (
     <Template goBackHref="/">
-      <h1 className="text-2xl text-gray-500">Wir sind Fans von Spandau!</h1>
+      <h1 className="text-2xl text-gray-500 dark:text-gray-50">
+        Wir sind Fans von Spandau!
+      </h1>
       <Text>Tolle Nachrichten warten auf Sie:</Text>
-      <div className="relative p-4 mt-6 bg-white rounded-lg shadow-md">
+      <div className="relative p-4 mt-6 bg-white rounded-lg shadow-md dark:bg-slate-300">
         <div className="absolute flex items-center justify-center w-12 h-12 text-xs font-medium text-white rounded-full -top-4 -right-4 bg-primary">
           NEU
         </div>
