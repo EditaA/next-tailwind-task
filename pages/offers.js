@@ -1,12 +1,21 @@
 import Link from 'next/link';
-import ArrowIcon from '../components/ui/ArrowIcon';
+import ServiceList from '../components/ServiceList';
 import Template from '../components/Template';
+import Text from '../components/ui/Text';
+
+const services = [
+  { id: 1, href: '/', text: 'Fenster Reinigung' },
+  { id: 2, href: '/', text: 'Wohnungs Reinigung' },
+  { id: 3, href: '/', text: 'Garten Service' },
+  { id: 4, href: '/', text: 'Hausmeister Service' },
+  { id: 5, href: '/', text: 'Fahrdienst' },
+];
 
 export default function Offers() {
   return (
     <Template goBackHref="/">
       <h1 className="text-2xl text-gray-500">Wir sind Fans von Spandau!</h1>
-      <p className="mt-2 text-gray-500">Tolle Nachrichten warten auf Sie:</p>
+      <Text>Tolle Nachrichten warten auf Sie:</Text>
       <div className="relative p-4 mt-6 bg-white rounded-lg shadow-md">
         <div className="absolute flex items-center justify-center w-12 h-12 text-xs font-medium text-white rounded-full -top-4 -right-4 bg-primary">
           NEU
@@ -20,7 +29,7 @@ export default function Offers() {
         <hr className="bottom-0 my-4 border-purple-300" />
         <p className="mb-2">Im Wertvon €295,90</p>
         <h5 className="font-medium">
-          Bie Pflegegrad 2 ubenimmt die Kasse 100% der Kosten.
+          Bie Pflegegrad 2 übenimmt die Kasse 100% der Kosten.
         </h5>
         <div className="flex items-center justify-center mt-3">
           <Link href="/offers">
@@ -33,79 +42,15 @@ export default function Offers() {
           </Link>
         </div>
         <p className="flex justify-center mt-3 text-xs text-primary">
-          Prufen ob Pflegezuschuss ouf mich zutrifft
+          Prüfen ob Pflegezuschuss ouf mich zutrifft
         </p>
       </div>
       <div>
-        <p className="mt-2 text-gray-500">Was wir in Spandau anbieten:</p>
-        <ul className="mt-3">
-          <li className="mt-3 text-gray-500 bg-white rounded-lg shadow-md hover:shadow-lg">
-            <Link href="/">
-              <a
-                className="flex justify-between px-6 py-2 hover:text-gray-700"
-                href="/"
-              >
-                Fenster Reinigung <ArrowIcon classes="rotate-180" />
-              </a>
-            </Link>
-          </li>
-          <li className="mt-3 text-gray-500 bg-white rounded-lg shadow-md hover:shadow-lg">
-            <Link href="/">
-              <a
-                className="flex justify-between px-6 py-2 hover:text-gray-700"
-                href="/"
-              >
-                Wohnungs Reinigung <ArrowIcon classes="rotate-180" />
-              </a>
-            </Link>
-          </li>
-          <li className="mt-3 text-gray-500 bg-white rounded-lg shadow-md hover:shadow-lg">
-            <Link href="/">
-              <a
-                className="flex justify-between px-6 py-2 hover:text-gray-700"
-                href="/"
-              >
-                Garten Service
-                <ArrowIcon classes="rotate-180" />
-              </a>
-            </Link>
-          </li>
-          <li className="mt-3 text-gray-500 bg-white rounded-lg shadow-md hover:shadow-lg">
-            <Link href="/">
-              <a
-                className="flex justify-between px-6 py-2 hover:text-gray-700"
-                href="/"
-              >
-                Hausmeister Service <ArrowIcon classes="rotate-180" />
-              </a>
-            </Link>
-          </li>
-          <li className="mt-3 text-gray-500 bg-white rounded-lg shadow-md hover:shadow-lg">
-            <Link href="/">
-              <a
-                className="flex justify-between px-6 py-2 hover:text-gray-700"
-                href="/"
-              >
-                Fahrdienst
-                <ArrowIcon classes="rotate-180" />
-              </a>
-            </Link>
-          </li>
-        </ul>
+        <Text>Was wir in Spandau anbieten:</Text>
+        <div className="mt-3">
+          <ServiceList services={services} />
+        </div>
       </div>
     </Template>
-    // <>
-    //   <div className="container flex p-4 mx-auto">
-    //     <div className="flex flex-col items-center mr-8 text-gray-500">
-    //       <ArrowIcon />
-    //       <span>Zuruck</span>
-    //     </div>
-    //     <Logo />
-    //   </div>
-
-    //   <div className="container px-5 mx-auto mt-6">
-
-    //   </div>
-    // </>
   );
 }

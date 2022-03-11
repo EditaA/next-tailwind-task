@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.form-radio:checked {
+    background-image: none;
+}
+
+input[type='radio']:focus {
+    --tw-ring-color: transparent;
+}
+
+.form-select {
+    background-size: 2.5rem;
+}
