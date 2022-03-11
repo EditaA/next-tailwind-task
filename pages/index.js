@@ -7,8 +7,8 @@ import Logo from '../components/ui/Logo';
 
 export default function Home() {
   return (
-    <>
-      <header className="container relative w-full px-5 pt-8 pb-12 mx-auto overflow-hidden">
+    <div className="container max-w-xl mx-auto">
+      <header className="relative w-full px-5 pt-8 pb-12 overflow-hidden">
         <Logo />
         <div className="absolute w-40 h-40 border-2 rounded-full shadow-md -top-10 -right-14">
           <div className="absolute flex flex-col items-center justify-center text-sm font-semibold text-gray-500 uppercase bottom-6 left-6">
@@ -18,7 +18,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <main className="container px-5 mx-auto">
+      <main className="px-5">
         <h1 className="text-2xl text-gray-500">
           Der Berliner Pflegedienst mit Durchblick und Expertise
         </h1>
@@ -42,6 +42,6 @@ export default function Home() {
           </Link>
         </div>
       </main>
-    </>
+    </div>
   );
 }
