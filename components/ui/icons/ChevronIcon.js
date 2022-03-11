@@ -1,4 +1,4 @@
-const ArrowIcon = ({ classes, ...rest }) => {
+const ChevronIcon = ({ classes, ...rest }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,4 +19,4 @@ const ArrowIcon = ({ classes, ...rest }) => {
   );
 };
 
-export default ArrowIcon;
+export default ChevronIcon;

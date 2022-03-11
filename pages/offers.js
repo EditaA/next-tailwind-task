@@ -32,10 +32,10 @@ export default function Offers() {
           Bie Pflegegrad 2 übenimmt die Kasse 100% der Kosten.
         </h5>
         <div className="flex items-center justify-center mt-3">
-          <Link href="/offers">
+          <Link href="/services">
             <a
               className="text-gray-100 bg-primary hover:bg-fuchsia-800 focus:ring-4 focus:ring-fuchsia-800 font-medium rounded-lg text-sm px-16 py-2.5 text-center mr-2 my-2"
-              href="/offers"
+              href="/services"
             >
               Unverbindlich Anfragen
             </a>

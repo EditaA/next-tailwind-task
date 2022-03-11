@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import ArrowIcon from './ui/ArrowIcon';
+import ChevronIcon from './ui/icons/ChevronIcon';
 import Logo from './ui/Logo';
 
 const Template = ({ goBackHref, children }) => {
@@ -12,7 +12,7 @@ const Template = ({ goBackHref, children }) => {
             className="flex flex-col items-center mr-8 text-gray-500"
             href={goBackHref}
           >
-            <ArrowIcon /> <span>Zurück</span>
+            <ChevronIcon /> <span>Zurück</span>
           </a>
         </Link>
 

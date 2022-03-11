@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import ArrowIcon from './ui/ArrowIcon';
+import ChevronIcon from './ui/icons/ChevronIcon';
 
 const ServiceList = ({ services }) => {
   return (
@@ -15,7 +15,7 @@ const ServiceList = ({ services }) => {
               href={service.href}
             >
               {service.text}
-              <ArrowIcon classes="rotate-180" />
+              <ChevronIcon classes="text-gray-800 rotate-180" />
             </a>
           </Link>
         </li>
